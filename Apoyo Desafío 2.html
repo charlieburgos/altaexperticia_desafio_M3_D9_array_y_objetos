@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <script defer src="./assets/js/script.js"></script>
+    <title>Estadisticas centro medico ñuñoa </title>
+</head>
+<body>
+    <script>
+        document.write('<h1>Estadisticas centro medico ñuñoa</h1>');
+        document.write(`<p>Cantidad de atenciones para Radiologia: ${Radiologia.length}</p>`);
+        document.write(`<p>Cantidad de atenciones para Traumatología: ${traumatologia.length}</p>`);
+        document.write(`<p>Cantidad de atenciones para Dental: ${dental.length}</p>`);
+        
+        
+        document.write(`<p>Primera atencion: ${Radiologia[0].paciente} - ${Radiologia[0].prevision} | Última atención: ${Radiologia[radiologia.length -1].paciente} - ${Radiologia[radiologia.length -1].prevision}.</p>`);
+        document.write(`<p>Primera atencion: ${traumatologia[0].paciente} - ${traumatologia[0].prevision} | Última atención: ${traumatologia[traumatologia.length -1].paciente} - ${traumatologia[traumatologia.length -1].prevision}.</p>`);
+        document.write(`<p>Primera atencion: ${dental[0].paciente} - ${dental[0].prevision} | Última atención: ${dental[dental.length -1].paciente} - ${dental[dental.length -1].prevision}.</p>`);
+        
+    </script>
+
+
+    <div>
+
+        <div class="requerimiento-3">
+            <h3>Pacientes en Dental</h3>
+            <div id="lista-dental"></div> 
+        </div>
+
+        <div class="requerimiento-4">
+            <h3>Pacientes Total</h3>
+            <div id="lista-total"></div> 
+        </div>
+
+        <div class="requerimiento-5">
+            <h3>Pacientes con Isapre en Dental </h3>
+            <div id="lista-isapre-dental"></div> 
+        </div>
+        
+        <div class="requerimiento-6">
+            <h3>Pacientes Fonasa en Traumatología</h3>
+            <div id="lista-fonasa-traumatologia"></div> 
+        </div>
+
+    </div>
+
+</body>
+</html>
